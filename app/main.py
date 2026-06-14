@@ -5,7 +5,7 @@ import joblib
 
 app = FastAPI()
 
-model = joblib.load("model.pkl")
+model = joblib.load("../model.pkl")
 
 class CustomerData(BaseModel):
     city_tier: str
