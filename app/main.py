@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI
 from pydantic import BaseModel
 import pandas as pd
@@ -75,3 +74,4 @@ def batch_predict(customers: list[CustomerData]):
         })
 
     return {"predictions": results}
+
